@@ -2,8 +2,25 @@
 
 
   <main>
-    <app-post-create></app-post-create>
-    <app-post-list></app-post-list>
+
+    <div class="row">
+      <div class="column">
+<!--        <app-post-control (postCreated)="onPostAdded($event)"></app-post-control>-->
+        <app-post-control></app-post-control>
+      </div>
+
+      <div class="column">
+<!--        <app-post-history [posts] = "storedPosts"></app-post-history>-->
+        <app-post-history></app-post-history>
+
+      </div>
+    </div>
+
+    <hr>
+
+
+    <br>
+
   </main>
 
 
