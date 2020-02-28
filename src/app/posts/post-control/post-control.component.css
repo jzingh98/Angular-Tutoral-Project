@@ -1,13 +1,13 @@
-main {
-  width: 100%;
-  margin: 1rem auto;
-}
-
 .row {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .column {
   flex: 50%;
   margin-left: 2rem;
+}
+
+button{
+  margin-right: 1rem;
 }

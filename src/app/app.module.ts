@@ -14,6 +14,13 @@ import { PostHistoryComponent } from './posts/post-history/post-history.componen
 import { PostControlComponent } from './posts/post-control/post-control.component';
 import {PostsService} from './posts/posts.service';
 import {HttpClientModule} from '@angular/common/http';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { ResultsComponent } from './Results/results/results.component';
+import { CostsComponent } from './Results/Costs/costs/costs.component';
+import { CustomizeComponent } from './Results/Customize/customize/customize.component';
+import { PurchasePriceComponent } from './Results/Costs/purchase-price/purchase-price.component';
+import { TotalSavingsComponent } from './Results/Costs/total-savings/total-savings.component';
+import { EnvironmentalComponent } from './Results/Environmental/environmental/environmental.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +28,12 @@ import {HttpClientModule} from '@angular/common/http';
     HeaderComponent,
     PostHistoryComponent,
     PostControlComponent,
+    ResultsComponent,
+    CostsComponent,
+    CustomizeComponent,
+    PurchasePriceComponent,
+    TotalSavingsComponent,
+    EnvironmentalComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +44,8 @@ import {HttpClientModule} from '@angular/common/http';
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule
   ],
   providers: [PostsService],
   bootstrap: [AppComponent]

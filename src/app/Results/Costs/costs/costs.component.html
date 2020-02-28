@@ -1,0 +1,16 @@
+<div class="selectionBar">
+  <button mat-raised-button color="primary" (click)="onSelectPurchasePrice()">Purchase Price</button>
+  <button mat-raised-button color="accent" (click)="onSelectTotalSavings()">Total Savings</button>
+</div>
+
+<br>
+
+
+<div *ngIf="selectorPage==0">
+  <app-purchase-price></app-purchase-price>
+</div>
+
+<div *ngIf="selectorPage==1">
+  <app-total-savings></app-total-savings>
+</div>
+
