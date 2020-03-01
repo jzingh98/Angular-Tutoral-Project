@@ -1,1 +1,29 @@
-<p>Hello from Total Savings</p>
+<p>Hello from Total Savings Component</p>
+
+<br>
+
+<div *ngIf="selectorTypeCost==0">
+  <p> Sum Graph </p>
+</div>
+<div *ngIf="selectorTypeCost==1">
+  <p> Depreciation Graph </p>
+</div>
+<div *ngIf="selectorTypeCost==2">
+  <p> Fuel Graph </p>
+</div>
+<div *ngIf="selectorTypeCost==3">
+  <p> Maintenance Graph </p>
+</div>
+<div *ngIf="selectorTypeCost==4">
+  <p> Insurance Graph </p>
+</div>
+
+<br>
+
+<div class="selectionBar">
+  <button mat-raised-button color="primary" (click)="onSelectSum()">Total</button>
+  <button mat-raised-button color="primary" (click)="onSelectDepreciation()">Depreciation</button>
+  <button mat-raised-button color="primary" (click)="onSelectFuel()">Fuel</button>
+  <button mat-raised-button color="primary" (click)="onSelectMaintenance()">Maintenance</button>
+  <button mat-raised-button color="primary" (click)="onSelectInsurance()">Insurance</button>
+</div>

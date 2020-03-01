@@ -1,1 +1,48 @@
-<p>customize works!</p>
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="col">
+          <div class = "row">
+            <button mat-raised-button color="primary" (click)="onSelectCommuteSettings()">Commute Settings</button>
+          </div>
+          <div class = "row">
+            <button mat-raised-button color="primary" (click)="onSelectCarSettings()">Car Settings</button>
+          </div>
+          <div class = "row">
+            <button mat-raised-button color="primary" (click)="onSelectFuelSettings()">Fuel Settings</button>
+          </div>
+          <div class = "row">
+            <button mat-raised-button color="primary" (click)="onSelectFinancialSettings()">Financial Settings</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div *ngIf="selectorTypeCost==0">
+          <app-commute-settings></app-commute-settings>
+        </div>
+        <div *ngIf="selectorTypeCost==1">
+          <app-car-settings></app-car-settings>
+        </div>
+        <div *ngIf="selectorTypeCost==2">
+          <app-fuel-settings></app-fuel-settings>
+        </div>
+        <div *ngIf="selectorTypeCost==3">
+          <app-financial-settings></app-financial-settings>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

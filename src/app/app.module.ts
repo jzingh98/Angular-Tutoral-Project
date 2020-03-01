@@ -21,6 +21,10 @@ import { CustomizeComponent } from './Results/Customize/customize/customize.comp
 import { PurchasePriceComponent } from './Results/Costs/purchase-price/purchase-price.component';
 import { TotalSavingsComponent } from './Results/Costs/total-savings/total-savings.component';
 import { EnvironmentalComponent } from './Results/Environmental/environmental/environmental.component';
+import { FuelSettingsComponent } from './Results/Customize/fuel-settings/fuel-settings.component';
+import { CarSettingsComponent } from './Results/Customize/car-settings/car-settings.component';
+import { CommuteSettingsComponent } from './Results/Customize/commute-settings/commute-settings.component';
+import { FinancialSettingsComponent } from './Results/Customize/financial-settings/financial-settings.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,10 @@ import { EnvironmentalComponent } from './Results/Environmental/environmental/en
     PurchasePriceComponent,
     TotalSavingsComponent,
     EnvironmentalComponent,
+    FuelSettingsComponent,
+    CarSettingsComponent,
+    CommuteSettingsComponent,
+    FinancialSettingsComponent,
   ],
   imports: [
     BrowserModule,

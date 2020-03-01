@@ -5,3 +5,8 @@ button{
 .selectionBar {
   margin-bottom: 1rem;
 }
+.tileContainer {
+  height: 1000rem;
+  background-color: dodgerblue;
+  justify-content: left;
+}

@@ -1,8 +1,6 @@
-
-mat-grid-tile {
-  background: lightblue;
+.container {
+  background-color: #b3d7ff;
+  width: 95%;
+  margin-bottom: 2rem;
 }
 
-mat-grid-list {
-  margin-bottom: 1rem;
-}
