@@ -1,11 +1,23 @@
   <app-header> </app-header>
 
-  <main>
+  <br>
+
+  <div *ngIf="stepSelected==0">
+    <app-journey></app-journey>
+  </div>
+
+  <div *ngIf="stepSelected==1">
     <app-results></app-results>
-  </main>
+  </div>
 
+  <br>
 
-
+  <div class="footerContainer">
+    <div class="selectionBar">
+      <button mat-raised-button color="accent" (click)="onStepOne()">Journey</button>
+      <button mat-raised-button color="accent" (click)="onStepTwo()">Results</button>
+    </div>
+  </div>
 
 
 

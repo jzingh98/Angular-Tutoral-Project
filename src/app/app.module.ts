@@ -25,6 +25,9 @@ import { FuelSettingsComponent } from './Results/Customize/fuel-settings/fuel-se
 import { CarSettingsComponent } from './Results/Customize/car-settings/car-settings.component';
 import { CommuteSettingsComponent } from './Results/Customize/commute-settings/commute-settings.component';
 import { FinancialSettingsComponent } from './Results/Customize/financial-settings/financial-settings.component';
+import { JourneyComponent } from './Journey/journey/journey.component';
+import { StepOneComponent } from './Journey/StepOne/step-one/step-one.component';
+import { StepTwoComponent } from './Journey/StepTwo/step-two/step-two.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import { FinancialSettingsComponent } from './Results/Customize/financial-settin
     CarSettingsComponent,
     CommuteSettingsComponent,
     FinancialSettingsComponent,
+    JourneyComponent,
+    StepOneComponent,
+    StepTwoComponent,
   ],
   imports: [
     BrowserModule,

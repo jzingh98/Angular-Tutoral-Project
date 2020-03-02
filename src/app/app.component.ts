@@ -11,8 +11,18 @@ export class AppComponent {
   storedPosts: Post[] = [
   ];
 
+  stepSelected = 1;
+
   onPostAdded(post) {
     this.storedPosts.push(post);
     console.log('Hello Dilso');
+  }
+
+  onStepOne() {
+    this.stepSelected = 0;
+  }
+
+  onStepTwo() {
+    this.stepSelected = 1;
   }
 }
